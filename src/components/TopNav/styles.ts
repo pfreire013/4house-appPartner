@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import ArrowLeftWhite from '../../../assets/icons/arrow-left-white.svg'
+import ArrowLeftWhite from '../../../assets/icons/arrow-left.svg'
 import theme from '../../theme';
 
 export const Container = styled.View`
@@ -8,7 +8,7 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-vertical: 20px;
+  padding-bottom: 20px;
 `;
 
 export const TouchBack = styled.TouchableOpacity.attrs({
@@ -18,8 +18,11 @@ export const TouchBack = styled.TouchableOpacity.attrs({
   left: 30px;
 `;
 
-export const IconBack = styled(ArrowLeftWhite)`
-   // for edit icon style need to change de svg file
+export const IconBack = styled(ArrowLeftWhite).attrs({
+  fill: theme.color.white,
+  height: 20,
+  width: 20
+})`
 `;
 
 export const Title = styled.Text`

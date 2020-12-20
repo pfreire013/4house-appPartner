@@ -2,6 +2,7 @@ const theme = {
   color: {
     primary: '#3574F2',
     secondary: '#FF5B44',
+    secondaryOpacity: '#FFCDC6',
     white: '#FFFFFF',
     black: '#000000',
     lowGrey: '#F2F2F7',
@@ -13,7 +14,8 @@ const theme = {
   },
   fontFamily: {
     Roboto: 'Roboto'
-  }
+  },
+  touchOpacity: 0.7
 }
 
 export default theme

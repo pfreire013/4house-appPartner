@@ -13,16 +13,24 @@ const Welcome: React.FC = () => {
         navigation.navigate(RouteNames.InitialStack.Login)
     }
 
+    function handleNavigationToRegister () {
+        navigation.navigate(RouteNames.RegisterStack.RegisterProfile)
+    }
+
     return (
         <Container>
             <Main>
                 <Title>Welcome</Title>
             </Main>
             <ButtonsContainer>
-                <TouchLogin onPress={handleNavigationToLogin}>
+                <TouchLogin
+                    onPress={handleNavigationToLogin}
+                >
                     <TextLogin>Login</TextLogin>
                 </TouchLogin>
-                <TouchSignUp>
+                <TouchSignUp
+                    onPress={handleNavigationToRegister}
+                >
                     <TextSignUp>Sign Up</TextSignUp>
                 </TouchSignUp>
             </ButtonsContainer>
